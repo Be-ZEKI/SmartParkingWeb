@@ -15,17 +15,6 @@ The SmartParkingWeb is developed using:
 - [Node JS](https://nodejs.org/)
 
 
-### Set environment variables 
-
-Create specified files and fill in the keys as below.
-
-#### backend/.env
-- `MONGO_URL` = the url string for your database
-- `GOOGLE_API_KEY` = the Google Maps API string
-#### client/.env.local
-- `REACT_APP_GOOGLE_MAPS_API_KEY` = the Google Maps API string
-- `REACT_APP_URL` = backend url that axios requests are sent to (ie. http://localhost:8000) 
-
 ### :file_folder:The layout of project folder/file structure
 ```
 ├── client 
@@ -92,4 +81,38 @@ Create specified files and fill in the keys as below.
     - Tells git which files to ignore in Git
 - #### `README` 
     - Informative documentation file of app
+
+### How to build the software?
+1. Install node.js from its ['website'](https://nodejs.org/en/download/current) and then install NPM with
+   ```sh
+   $ pip install npm
+   ```
+3. Install required NPM packages for frontend
+   ```sh
+   $ npm install && cd client && npm install
+   ```
+4. Install required python packages for backend by using 'requirements_file.txt' 
+   ```sh
+   $ pip install -r requirements_file.txt
+   ```
+5. Setting the env variables -> check 
+    Create specified files and fill in the keys as below.
+    
+    #### backend/.env
+    - `MONGO_URL` = the url string for your database
+    - `GOOGLE_API_KEY` = the Google Maps API string
+    #### client/.env.local
+    - `REACT_APP_GOOGLE_MAPS_API_KEY` = the Google Maps API string
+    - `REACT_APP_URL` = backend url that axios requests are sent to (ie. http://localhost:8000) 
+6. To start the application
+   ```sh
+   $ cd 
+   $ npm start
+   ```
+
+### Support
+In case of any bugs or questions, here are the people you can reach:
+- Elif Ecem Ümütlü - umutluecem@gmail.com
+- Enis Mert Kuzu - emertkuzu35@gmail.com
+- Ender Doğan Işık - 
 
